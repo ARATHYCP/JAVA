@@ -7,11 +7,11 @@ class symmetric
    int a[][] = new int[10][10];
    int temp[][] = new int[10][10];
   Scanner sc=new Scanner(System.in);
-  System.out.println("enter the number of row :");
+  System.out.println("Enter the number of row :");
   int r=sc.nextInt();
-  System.out.println("enter the number of column:");
+  System.out.println("Enter the number of column:");
   int c=sc.nextInt();
-  System.out.println("enter the elements");
+  System.out.println("Enter the elements");
   for(int i=0;i<r;i++)
    {
     for(int j=0;j<c;j++)
@@ -19,7 +19,7 @@ class symmetric
       a[i][j]=sc.nextInt();
      }
     }
-   System.out.println("Print the  metrix:");
+   System.out.println("Print the  matrix:");
   for(int i=0;i<r;i++)
    {
     for(int j=0;j<c;j++)
@@ -57,9 +57,9 @@ class symmetric
      }
     }
     if(f==1)
-      System.out.println("It is a not symmetric metricx");
+      System.out.println("It is a not symmetric matricx");
     else
-        System.out.println("It is  a symmetric metricx");
+        System.out.println("It is  a symmetric matricx");
     
   }
 }
