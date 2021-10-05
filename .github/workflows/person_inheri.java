@@ -24,10 +24,11 @@ class person
  gender=sc.nextLine();
  System.out.println(" Enter the age");
  age=sc.nextInt();
+ sc.nextLine();
  System.out.println(" Enter address");
+
  address=sc.nextLine();
  }
-  
  void display()
  {
  System.out.println("The person name is : "+name);
@@ -38,14 +39,15 @@ class person
 }
 
 
+
+
 class employee extends person
 {
   int empid;
  String company_name;
  String qualification;
  int salary;
-
-employee()
+ employee()
  {
  empid=0;
  company_name=" ";
@@ -59,16 +61,16 @@ employee()
  Scanner sc= new Scanner(System.in);
  System.out.println(" Enter the employeee id:");
  empid=sc.nextInt();
+ sc.nextLine();
  System.out.println(" Enter the company name:");
+ 
  company_name=sc.nextLine();
  System.out.println(" Enter the qualification of the employee:");
  qualification=sc.nextLine();
 System.out.println(" Enter the  salary of employeee :");
  salary=sc.nextInt();
  }
-
-
-void display()
+ void display()
  {
    super.display();
  System.out.println("The employee id of the employee : "+empid);
@@ -84,15 +86,13 @@ void display()
  String dept;
  String subject;
  int id;
-
-Teacher()
+ Teacher()
  {
  dept="";
  subject="";
  id=0;
  }
-
-void read()
+ void read()
  {
  super.read();
  Scanner sc= new Scanner(System.in);
@@ -103,7 +103,6 @@ void read()
  System.out.println("Teacher id :");
  id=sc.nextInt();
  }
- 
  void display()
  {
  super.display();
@@ -112,13 +111,11 @@ void read()
  System.out.println("Teacher id :"+id);
  }
 }
-
-
-class personInheri
+ class personInheri
  {
   public static void main(String args[])
   {
-   Scanner sc= new Scanner(System.in);
+  Scanner sc= new Scanner(System.in);
   System.out.println("How many teacher details to enter:");
   int count=sc.nextInt();
    Teacher t[]=new Teacher[count];
